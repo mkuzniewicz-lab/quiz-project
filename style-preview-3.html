@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style 3: Bold & Dramatic</title>
+    <style>
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-card {
+            background: #1a1a1a;
+            border-radius: 4px;
+            padding: 50px 45px;
+            max-width: 500px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+            border: 1px solid #333;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .question {
+            font-size: 20px;
+            color: #cccccc;
+            margin-bottom: 30px;
+            font-weight: 300;
+            text-align: center;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        .answer {
+            background: transparent;
+            color: #ffffff;
+            padding: 20px 25px;
+            margin: 14px 0;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            font-size: 16px;
+            border: 2px solid #ffffff;
+            width: 100%;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .answer:hover {
+            background: #ffffff;
+            color: #0a0a0a;
+        }
+        .style-label {
+            text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="style-label">STYLE 3: Bold & Dramatic</div>
+        <div class="quiz-card">
+            <h1>Coffee Quiz</h1>
+            <div class="question">If you were a color, which would you be?</div>
+            <button class="answer">Bold Crimson Red</button>
+            <button class="answer">Calm Forest Green</button>
+            <button class="answer">Deep Ocean Blue</button>
+        </div>
+    </div>
+</body>
+</html>
