@@ -191,8 +191,19 @@ export default function Home() {
           ☕ Coffee Personality Quiz
         </h1>
 
-        <div className="text-center text-gray-500 mb-8">
+        <div className="text-center text-gray-500 mb-4">
           Question {currentQuestion + 1} of {questions.length}
+        </div>
+
+        {/* Progress Bar */}
+        <div className="mb-8 w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+          <div
+            className="h-full transition-all duration-500 ease-out rounded-full"
+            style={{
+              width: `${((currentQuestion + 1) / questions.length) * 100}%`,
+              background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+            }}
+          />
         </div>
 
         <div className="mb-8">
